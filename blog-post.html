@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - Xuefeng Li</title>
+    <meta name="description" content="Read the latest insights on AI, machine learning, and technology.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Xuefeng Li</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="index.html#education" class="nav-link">Education</a>
+                <a href="index.html#publications" class="nav-link">Publications</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <article class="blog-post">
+        <div class="container">
+            <div class="blog-post-header">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <a href="blog.html">Blog</a>
+                    <span>/</span>
+                    <span>Current Post</span>
+                </nav>
+                
+                <h1 class="blog-post-title" id="post-title">Loading...</h1>
+                
+                <div class="blog-post-meta">
+                    <div class="post-date" id="post-date">Loading...</div>
+                    <div class="post-read-time" id="post-read-time">Loading...</div>
+                </div>
+                
+                <div class="blog-post-tags" id="post-tags">
+                    <!-- Tags will be loaded here -->
+                </div>
+            </div>
+            
+            <div class="blog-post-content" id="post-content">
+                <!-- Content will be loaded here -->
+            </div>
+            
+            <div class="blog-post-footer">
+                <div class="post-navigation">
+                    <a href="blog.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Back to Blog
+                    </a>
+                </div>
+                
+                <div class="post-share">
+                    <h3>Share this post</h3>
+                    <div class="share-buttons">
+                        <button class="share-btn" onclick="shareOnTwitter()">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </button>
+                        <button class="share-btn" onclick="shareOnLinkedIn()">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </button>
+                        <button class="share-btn" onclick="copyLink()">
+                            <i class="fas fa-link"></i> Copy Link
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Related Posts -->
+    <section class="related-posts">
+        <div class="container">
+            <h2>Related Posts</h2>
+            <div class="related-posts-grid" id="related-posts">
+                <!-- Related posts will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Xuefeng Li. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/XuefengLi1" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/xuefeng-li-sydney/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://scholar.google.com.au/citations?user=BSh0CXIAAAAJ&hl=en" target="_blank" class="social-link">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/blog-post.js"></script>
+</body>
+</html>

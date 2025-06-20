@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Xuefeng Li</title>
+    <meta name="description" content="Insights on AI, machine learning, and technology by Xuefeng Li, Senior Applied Scientist.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Xuefeng Li</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="index.html#education" class="nav-link">Education</a>
+                <a href="index.html#publications" class="nav-link">Publications</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <div class="blog-header-content">
+                <h1 class="blog-header-title">Blog</h1>
+                <p class="blog-header-subtitle">
+                    Insights on AI, machine learning, and technology. Sharing knowledge from research to production.
+                </p>
+                <div class="blog-search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="blog-search" placeholder="Search articles...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-filters">
+                <h3>Categories</h3>
+                <div class="filter-tags">
+                    <button class="filter-tag active" data-filter="all">All</button>
+                    <button class="filter-tag" data-filter="AI Agents">AI Agents</button>
+                    <button class="filter-tag" data-filter="Machine Learning">Machine Learning</button>
+                    <button class="filter-tag" data-filter="LLMs">LLMs</button>
+                    <button class="filter-tag" data-filter="Research">Research</button>
+                    <button class="filter-tag" data-filter="Deep Learning">Deep Learning</button>
+                </div>
+            </div>
+            
+            <div class="blog-grid">
+                <!-- Blog posts will be loaded here -->
+            </div>
+            
+            <div class="blog-pagination">
+                <button class="btn btn-secondary" id="load-more">Load More Posts</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get notified when I publish new articles about AI and machine learning.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Xuefeng Li. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/XuefengLi1" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/xuefeng-li-sydney/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://scholar.google.com.au/citations?user=BSh0CXIAAAAJ&hl=en" target="_blank" class="social-link">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
