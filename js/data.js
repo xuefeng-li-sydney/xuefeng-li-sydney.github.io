@@ -4,7 +4,7 @@ const personalData = {
     title: "Senior Applied Scientist",
     location: "Sydney, Australia",
     email: "ausmountain@gmail.com",
-    phone: "+61450306410",
+
     github: "https://github.com/XuefengLi1",
     linkedin: "https://www.linkedin.com/in/xuefeng-li-sydney/",
     googleScholar: "https://scholar.google.com.au/citations?user=BSh0CXIAAAAJ&hl=en",
@@ -101,15 +101,21 @@ const education = [
 
 const publications = [
     {
-        title: "Provably end-to-end label-noise learning without anchor points",
-        authors: "Li, X, Liu, T, Han, B, Niu, G, and Sugiyama, M",
-        venue: "International conference on machine learning, ICML 2021",
+        title: "RepoMod-Bench: A Benchmark for Code Repository Modernization via Implementation-Agnostic Testing",
+        authors: "Li, X, Ben-Israel, N, Raz, Y, Ahmed, B, Serebro, D, and Raux, A",
+        venue: "ACM SIGKDD Conference on Knowledge Discovery and Data Mining, KDD 2026",
         type: "conference"
     },
     {
         title: "Eccentric regularization: minimizing hyperspherical energy without explicit projection",
         authors: "Li, X, and Blair, A",
         venue: "International Joint Conference on Neural Networks, IJCNN 2022",
+        type: "conference"
+    },
+    {
+        title: "Provably end-to-end label-noise learning without anchor points",
+        authors: "Li, X, Liu, T, Han, B, Niu, G, and Sugiyama, M",
+        venue: "International conference on machine learning, ICML 2021",
         type: "conference"
     },
     {
