@@ -118,3 +118,39 @@
     color: var(--text-3);
     font-style: italic;
 }
+
+/* Side projects */
+.project-thumb {
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    margin-bottom: 10px;
+}
+
+.project-thumb img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+}
+
+.project-thumb:hover img {
+    transform: scale(1.02);
+}
+
+.project-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.project-title a {
+    color: var(--text);
+}
+
+.project-desc {
+    font-size: 13px;
+    color: var(--text-2);
+    line-height: 1.6;
+}
