@@ -1,0 +1,77 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: #fcfcfc;
+    color: #1a1a1a;
+    font: 300 15px/1.7 'Jost', 'Futura', 'Century Gothic', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+main, footer { max-width: 1200px; margin: 0 auto; padding-left: 40px; padding-right: 40px; box-sizing: content-box; }
+
+/* banner: Claude Monet, The Seine at Giverny (1897), National Gallery of Art */
+.banner {
+    position: relative;
+    height: clamp(220px, 22vw, 320px);
+    margin-bottom: 96px;
+    padding: 0 40px;
+    color: #3a3f4a;
+    background: linear-gradient(rgba(250, 250, 248, 0.35), rgba(250, 250, 248, 0.35)), url(images/banner.webp) center 75% / cover no-repeat #e6e3dc;
+}
+.banner .bar { max-width: 1200px; margin: 0 auto; padding-top: 32px; display: flex; justify-content: space-between; align-items: baseline; gap: 24px; }
+.banner .name { font-size: 15px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: #3a3f4a; }
+.banner nav { display: flex; gap: 30px; }
+.banner nav a { font-size: 13px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(58, 63, 74, 0.6); transition: color .2s; }
+.banner nav a:hover, .banner nav a.on { color: #3a3f4a; }
+.banner blockquote {
+    position: absolute; left: 40px; right: 40px; bottom: 28px;
+    max-width: 1200px; margin: 0 auto; text-align: right;
+    font-size: 14px; line-height: 1.6; letter-spacing: 0.02em; color: rgba(46, 50, 60, 0.9); text-shadow: 0 0 10px rgba(250, 250, 248, 0.8);
+}
+.banner blockquote span { display: block; white-space: nowrap; }
+
+footer { padding-top: 96px; padding-bottom: 64px; text-align: center; font-size: 13px; letter-spacing: 0.04em; color: #8a8a8a; }
+
+/* about */
+.about { display: grid; grid-template-columns: 300px 1fr; gap: 64px; align-items: start; }
+.about h1 { font: 400 15px/1.4 'Jost', sans-serif; letter-spacing: 0.08em; text-transform: uppercase; padding-top: 3px; }
+.about p { max-width: 36em; }
+.about p + p { margin-top: 14px; }
+.about p a, .pubs a { border-bottom: 1px solid #ccc; }
+.about .links { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 6px 24px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #8a8a8a; }
+.about .links a:hover { color: #1a1a1a; }
+
+.research { margin-top: 120px; }
+.research h2 { font: 400 15px/1.4 'Jost', sans-serif; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 28px; }
+.pubs { list-style: none; }
+.pubs li { display: grid; grid-template-columns: 300px 1fr; gap: 64px; padding: 18px 0; border-top: 1px solid #e8e8e8; }
+.pubs .v { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #8a8a8a; padding-top: 2px; }
+.pubs .t { font-weight: 400; }
+.pubs .a { font-size: 13px; color: #8a8a8a; }
+.pubs b { font-weight: 400; color: #1a1a1a; }
+
+/* side projects */
+.projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 44px 36px; }
+.project a.pic { display: block; overflow: hidden; background: #efefef; }
+.project img { display: block; width: 100%; height: auto; aspect-ratio: 1; transition: transform .8s ease; }
+.project a.pic:hover img { transform: scale(1.025); }
+.project h3 { margin-top: 16px; font-size: 14px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; }
+.project p { margin-top: 6px; font-size: 14px; color: #6f6f6f; }
+.project .go { display: inline-block; margin-top: 10px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #8a8a8a; }
+.project .go:hover { color: #1a1a1a; }
+
+@media (max-width: 720px) {
+    .projects { grid-template-columns: 1fr; gap: 32px; }
+    main, footer { padding-left: 20px; padding-right: 20px; }
+    .banner { height: 240px; margin-bottom: 48px; padding: 0 20px; background-position: 40% 60%; }
+    .banner .bar { padding-top: 24px; }
+    .banner .name { font-size: 13px; }
+    .banner nav { gap: 16px; }
+    .banner nav a { font-size: 12px; }
+    .banner blockquote { left: 20px; right: 20px; bottom: 20px; font-size: 13px; }
+    .about { grid-template-columns: 1fr; gap: 16px; }
+    .research { margin-top: 80px; }
+    .pubs li { grid-template-columns: 1fr; gap: 2px; }
+}
